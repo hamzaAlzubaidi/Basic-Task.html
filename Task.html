@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<HTML>
+<head>
+    <link href="Style.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript">
+    function Toggle(value){
+        switch(value){
+            case 'General':
+            document.getElementById('General').style.display="block";
+            document.getElementById('Password').style.display="none";
+            document.getElementById('Info').style.display="none";
+            document.getElementById('Notification').style.display="none";
+            break;
+            case 'Password':
+            document.getElementById('General').style.display="none";
+            document.getElementById('Password').style.display=" block";
+            document.getElementById('Info').style.display="none";
+            document.getElementById('Notification').style.display="none";
+
+            break;
+            case 'Info':
+            document.getElementById('General').style.display="none";
+            document.getElementById('Password').style.display="none";
+            document.getElementById('Info').style.display="block";
+            document.getElementById('Notification').style.display="none";
+            break;
+            case 'Notification':
+            document.getElementById('General').style.display="none";
+            document.getElementById('Password').style.display="none";
+            document.getElementById('Info').style.display="none";
+            document.getElementById('Notification').style.display="block";
+            break;
+        }
+    }
+    </script>
+</head>
+<body >
+
+<div class="Container">
+    
+    <span> Account Settings</span>
+</div>
+
+<div class="Div1">
+    
+    <div class="div1Float">
+
+    <div class= "divChoees" onclick="Toggle('General')"> General</div>
+    <div class="divChoees" onclick="Toggle('Password')"> Change password</div>
+    <div class="divChoees" onclick="Toggle('Info')">Info</div>
+    <div class ="divChoees" onclick="Toggle('Notification')"> Notifications</div>
+    
+</div>
+<div class="div2" id="General">
+  <div class="picStyle "> <img src="avatar.png" width="80" height="80" > </div>
+
+  <div class=" actionContioner">
+  <div class=" UploadContainer"> <button type="button"  class="uploadStyle">Upload new Photo </button></div>
+  <div  class=" resetContaionar"> <button type="button" class=" ResetStyle" >Reset </button></div>
+  <div class=" Caption"> <span> Allowed jpg,GIF or png max size of 800k </span> </div>
+
+</div>
+<div class=" inputContioner">
+ <span>  UserName</span>
+ <div > <input type="text" class="textboxStyle" /></div>
+</div>
+<div class=" inputSpace"><span> Name</span> </div>
+<div>  <input type="text" class="textboxStyle"/></div>
+<div class="inputSpace"><span> Email </span></div>
+<div>  <input type="text" class="textboxStyle"/> </div>
+<div class=" tableStyle">
+    <span>
+        Your email is not confirmed.please check your inbox
+    </span>
+    <br/>
+    <a href="#">resend confirmation</a>
+</div>
+<div class=" inputSpace"> 
+<span > Company</span>
+</div>
+<div>  <input type="text" class="textboxStyle" /> </div>
+
+ <div class= "buttonContioner">
+    <div class=" button1Stylye">
+        <button type="button" class="uploadStyle" >save Change</button>
+     </div>
+     <div class=" button2Stylye">   <button type="button"  class=" cancelStyle">Cancel </button> </div>
+ </div>
+
+
+</div>
+
+<div style="display: none;" id="Password">
+    Password'
+</div>
+<div style="display: none;" id="Info">
+    info
+</div>
+<div style="display: none;" id="Notification">
+    Notification
+</div>
+</div>
+</div>
+</body>
+
+
+
+
+
+</HTML>
