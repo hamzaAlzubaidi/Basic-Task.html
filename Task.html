@@ -46,19 +46,24 @@
     <div class="div1Float">
 
     <div class= "divChoees" onclick="Toggle('General')"> General</div>
-    <div class="divChoees" onclick="Toggle('Password')"> Change password</div>
+    <div class="divChoees" onclick="Toggle('Password')"> Change password  </div>
     <div class="divChoees" onclick="Toggle('Info')">Info</div>
     <div class ="divChoees" onclick="Toggle('Notification')"> Notifications</div>
     
 </div>
 <div class="div2" id="General">
+    <div style="overflow: hidden;">
   <div class="picStyle "> <img src="avatar.png" width="80" height="80" > </div>
 
   <div class=" actionContioner">
-  <div class=" UploadContainer"> <button type="button"  class="uploadStyle">Upload new Photo </button></div>
+ <div style="float: left;">
+     <input type="file" id="upload" hidden/>
+     <label for ="upload" class=" uploadStyle">upload new photo </label>
+ </div>
   <div  class=" resetContaionar"> <button type="button" class=" ResetStyle" >Reset </button></div>
   <div class=" Caption"> <span> Allowed jpg,GIF or png max size of 800k </span> </div>
 
+</div>
 </div>
 <div class=" inputContioner">
  <span>  UserName</span>
@@ -82,7 +87,7 @@
 
  <div class= "buttonContioner">
     <div class=" button1Stylye">
-        <button type="button" class="uploadStyle" >save Change</button>
+        <button type="button" class="saveChanges" >Save Change</button>
      </div>
      <div class=" button2Stylye">   <button type="button"  class=" cancelStyle">Cancel </button> </div>
  </div>
@@ -90,14 +95,77 @@
 
 </div>
 
-<div style="display: none;" id="Password">
-    Password'
+<div style="display: none ;" id="Password" class="div2 ">
+   
+    <div class=" inputSpace"><span> Current password</span> </div>
+<div>  <input type="text" class="textboxStyle"/></div>
+    
+<div class=" inputSpace"><span> New password</span> </div>
+<div>  <input type="text" class="textboxStyle"/></div>
+
+<div class=" inputSpace"><span> Repeat new password</span> </div>
+<div>  <input type="text" class="textboxStyle"/></div>
+
+<div class= "buttonContioner">
+    <div class=" button1Stylye">
+        <button type="button" class="saveChanges" >Save Change</button>
+     </div>
+     <div class=" button2Stylye">   <button type="button"  class=" cancelStyle">Cancel </button> </div>
+ </div>
+    
 </div>
-<div style="display: none;" id="Info">
-    info
+<div style="display: none;" id="Info" class="div2 ">
+    
+    <div class=" inputSpace"><span>Bio</span> </div>
+<div>  <input type="text" class="textboxStyle"/></div>
+<div class=" inputSpace"><span>Birth day</span> </div>
+<div> <input type="date" id="birthday" name="birthday" class=" textboxStyle">
+
 </div>
-<div style="display: none;" id="Notification">
-    Notification
+<div class=" inputSpace"> <span class=" inputSpace">  Country</span></div>
+<div>  <input list="Country" name="Country" class=" textboxStyle">
+    <datalist id="Country">
+      <option value="USA">
+      <option value="jordan">
+      <option value="egypt">
+      <option value="sudai arabia">
+      <option value="lebnon ">
+    </datalist> </div>
+    
+
+    <div class=" inputSpace"><br> <span class=" contantsStyle">  Contacts</span> </br></div>
+    <div class=" inputSpace"><span>phone number</span> </div>
+    <div>  <input type="text" class="textboxStyle"/></div>
+    <div class=" inputSpace"><span>website</span> </div>
+    <div>  <input type="text" class="textboxStyle"/></div>
+
+    <div class= "buttonContioner">
+        <div class=" button1Stylye">
+            <button type="button" class="saveChanges" >Save Change</button>
+         </div>
+         <div class=" button2Stylye">   <button type="button"  class=" cancelStyle">Cancel </button> </div>
+     </div>
+
+</div>
+    
+    
+<div style="display: none;" id="Notification" class="div2" >
+    
+    <div class=" inputSpace">  <span class=" contantsStyle"> Activity</span></div> 
+    <div class=" inputSpace"><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/> <span>Email me when someone my atricle</span>  </div>
+    <div class=" inputSpace"><input type="checkbox" id="vehicle2" name="vehicle1" value="Bike"/> <span>Email me when someone answers on my foroum thread</span> </div>
+    <div class=" inputSpace"><input type="checkbox" id="vehicle3" name="vehicle1" value="Bike"/> <span>Email me when someone follows me </span>  </div>
+   
+    <div class=" inputSpace"> <br> <span class=" contantsStyle"> Application <br/> </span></div> 
+    
+    <div class=" inputSpace"><input type="checkbox" id="vehicle4" name="vehicle1" value="Bike"/> <span>News and announcenents</span>  </div>
+    <div class=" inputSpace"><input type="checkbox" id="vehicle5" name="vehicle1" value="Bike"/> <span>Weekly product updates</span> </div>
+    <div class=" inputSpace"><input type="checkbox" id="vehicle6" name="vehicle1" value="Bike"/> <span>Weekly blog digest </span>  </div>
+    <div class= "buttonContioner">
+        <div class=" button1Stylye">
+            <button type="button" class="saveChanges" >Save Change</button>
+         </div>
+         </div>
 </div>
 </div>
 </div>

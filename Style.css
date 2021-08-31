@@ -89,6 +89,7 @@ body{
  .inputContioner
  {
     clear: left;
+    margin-top: 20px;
  }
  .inputSpace
  {
@@ -126,10 +127,12 @@ body{
  }
   .uploadStyle
  {
+    display: block;
    color: #ffffff;
    background-color: #428bca;
    border-radius: 4px;
    border-color:  #357ebd;
+   
  }
  .ResetStyle
  {
@@ -144,6 +147,9 @@ body{
    color: #333333;
    background-color: #ffffff;
    border-color: #cccccc;
+   width:90px ;
+   height: 40px;
+   border-radius: 4px;
  }
  .textboxStyle
  {
@@ -155,3 +161,20 @@ body{
 .textboxStyle:focus {
   background-color: #d43f3a;
 }
+.contantsStyle
+{
+   font-weight: bold;
+   margin-top: 30px;
+
+}
+.saveChanges
+ {
+    
+   color: #ffffff;
+   background-color: #357ebd;
+   border-radius: 4px;
+   border-color:  #c2c5c7;
+   width:90 px;
+   height: 40px;
+   
+ }
